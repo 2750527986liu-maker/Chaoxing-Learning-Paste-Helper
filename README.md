@@ -1,13 +1,13 @@
-# 超星 AI 评测粘贴解锁
+# 超星学习通复制粘贴助手 (Chaoxing Copy Paste Helper)
 
-解除超星学习通 AI 评测页面 (`mooc2-ans.chaoxing.com/mooc2-ans/ai-evaluate`) 的粘贴限制，支持 **Ctrl+V 粘贴** 和**悬浮按钮粘贴**。
+解除超星学习通 AI 评测页面、作业、考试的粘贴限制。支持 Ctrl+V、Ctrl+Shift+V、悬浮按钮三种方式粘贴。
 
 ## 安装
 
 1. 安装 [Tampermonkey](https://www.tampermonkey.net/) 浏览器扩展
 2. 点击下方链接安装脚本：
-   - [从 GitHub 安装](https://github.com/2750527986liu-maker/Chaoxing-AI-Paste-Unlock/raw/main/chaoxing-ai-paste-unlock.user.js)
-3. 打开超星 AI 评测页面，直接 Ctrl+V 即可粘贴
+   - [从 GitHub 安装](https://raw.githubusercontent.com/2750527986liu-maker/Chaoxing-Learning-Paste-Helper/main/chaoxing-ai-paste-unlock.user.js)
+3. 打开超星学习通页面，直接 Ctrl+V 即可粘贴
 
 ## 功能
 
@@ -31,12 +31,8 @@
 ## 适用页面
 
 - `mooc2-ans.chaoxing.com/mooc2-ans/ai-evaluate/*` — AI 评测答题页
-- 其他使用 `main-dialog-textarea` 的超星页面
+- `*.chaoxing.com` — 其他超星学习通页面
 
 ## 声明
 
-本工具仅供日常作业编辑便利使用，请勿用于考试作弊。使用本脚本产生的任何后果由用户自行承担。
-
-## License
-
-MIT
+本工具仅供日常作业编辑便利使用，请勿用于考试作弊。使用本脚本产生的任何后果由用户自行�
