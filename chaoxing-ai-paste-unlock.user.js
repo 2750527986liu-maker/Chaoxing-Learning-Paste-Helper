@@ -1,14 +1,14 @@
 // ==UserScript==
-// @name         超星 AI 评测粘贴解锁
-// @namespace    https://github.com/2750527986liu-maker/Chaoxing-AI-Paste-Unlock
+// @name         超星学习通复制粘贴助手 - AI评测页面粘贴限制解除 (Chaoxing Copy Paste Helper)
+// @namespace    https://github.com/2750527986liu-maker/Chaoxing-Learning-Paste-Helper
 // @version      1.0
-// @description  解除超星AI评测页面粘贴限制。capture阶段拦截paste + 原生setter注入 + InputEvent模拟打字 + 悬浮按钮。支持Ctrl+V、Ctrl+Shift+V、悬浮按钮三种方式。
+// @description  超星学习通复制粘贴助手。解除超星学习通AI评测页面、作业、考试的粘贴限制。支持Ctrl+V粘贴、Ctrl+Shift+V粘贴、悬浮按钮一键粘贴。针对 mooc2-ans.chaoxing.com AI评测答题页面，capture阶段拦截paste + 原生setter注入 + InputEvent模拟打字。
 // @author       2750527986liu-maker
 // @match        *://mooc2-ans.chaoxing.com/*
 // @match        *://*.chaoxing.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=chaoxing.com
-// @downloadURL  https://raw.githubusercontent.com/2750527986liu-maker/Chaoxing-AI-Paste-Unlock/main/chaoxing-ai-paste-unlock.user.js
-// @updateURL    https://raw.githubusercontent.com/2750527986liu-maker/Chaoxing-AI-Paste-Unlock/main/chaoxing-ai-paste-unlock.user.js
+// @downloadURL  https://raw.githubusercontent.com/2750527986liu-maker/Chaoxing-Learning-Paste-Helper/main/chaoxing-ai-paste-unlock.user.js
+// @updateURL    https://raw.githubusercontent.com/2750527986liu-maker/Chaoxing-Learning-Paste-Helper/main/chaoxing-ai-paste-unlock.user.js
 // @updateURL    https://github.com/2750527986liu-maker/Chaoxing-AI-Paste-Unlock/raw/main/chaoxing-ai-paste-unlock.user.js
 // @run-at       document-end
 // @grant        GM_log
@@ -301,11 +301,4 @@
     // =============================================
     function startPeriodicScan() {
         let count = 0;
-        const timer = setInterval(() => {
-            count++;
-            scanAndCleanTextareas();
-            if (count >= 30) clearInterval(timer);
-        }, 1000);
-    }
-
-    // ==========================
+      
