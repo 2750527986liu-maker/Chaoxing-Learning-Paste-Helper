@@ -6,7 +6,9 @@
 // @author       2750527986liu-maker
 // @match        *://mooc2-ans.chaoxing.com/*
 // @match        *://*.chaoxing.com/*
-// @downloadURL  https://github.com/2750527986liu-maker/Chaoxing-AI-Paste-Unlock/raw/main/chaoxing-ai-paste-unlock.user.js
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=chaoxing.com
+// @downloadURL  https://raw.githubusercontent.com/2750527986liu-maker/Chaoxing-AI-Paste-Unlock/main/chaoxing-ai-paste-unlock.user.js
+// @updateURL    https://raw.githubusercontent.com/2750527986liu-maker/Chaoxing-AI-Paste-Unlock/main/chaoxing-ai-paste-unlock.user.js
 // @updateURL    https://github.com/2750527986liu-maker/Chaoxing-AI-Paste-Unlock/raw/main/chaoxing-ai-paste-unlock.user.js
 // @run-at       document-end
 // @grant        GM_log
@@ -306,11 +308,4 @@
         }, 1000);
     }
 
-    // =============================================
-    // 主初始化
-    // =============================================
-    function init() {
-        installPasteInterceptor();
-        scanAndCleanTextareas();
-        startObserver();
-        startPe
+    // ==========================
